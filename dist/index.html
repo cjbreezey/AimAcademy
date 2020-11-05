@@ -8,30 +8,37 @@
     <title>Aim Academy</title>
 </head>
 <body>
-    <button id="modal-btn">Change Settings</button>
     <div id="modal" class="">
         <div class="modal-content">
             <h3 class="title">AIM ACADEMY</h3>
+            <div class="image-links">
+                <a href="https://github.com/cjbreezey/AimAcademy" target="_blank" ><img src="../images/github.png" id="github"></a>
+                <a href="https://www.linkedin.com/in/christopher-j-lee/" target="_blank" ><img src="../images/linkedin.jpg" id="linkedin"></a>
+            </div>
             <p class="instructions">
                 Aim Academy is designed to help improve your mouse speed and accuracy.
-                To play, please select a level difficulty and click start. Objects will
-                randomly appear on screen and your goal is to click it as quick as possible.
-                Score is calculated by how fast you can click the object. AIM for the top
-                of the highscores now! To play, choose your difficulty level and click Start!
+                The rules are simple, use your mouse to click Objects that appear 
+                on screen. Your goal is to accurately click it as quick as possible. 
+                There are 3 game modes; Timed, Survival, and God mode. When ready, 
+                press Start to choose your game mode.
+                <br />
+                <br />
+                <span>Timed Mode - Practice how many objects you can click in the given Time</span>
+                <br />
+                <span>Survival Mode - Score as many points you can with 3 lives</span> 
+                <br />
+                <span>God Mode - Can you survive the wrath of God?</span>
             </p>
-            <div class="level-button">
-                <button>Easy</button>
-                <button>Medium</button>
-                <button>Hard</button>
-            </div>
             <div class="start-button">
                 <button id="startBtn">Start</button>
             </div>
         </div>
     </div>
     <div>
-        <canvas></canvas>
+        <canvas class="canvas">
+        </canvas>
     </div>
+    <!-- <img src="../images/linkedin1.png" class=""> -->
     <script src="../dist/bundle.js"></script>
     <!-- <script src="../src/index.js"></script> -->
 </body>
