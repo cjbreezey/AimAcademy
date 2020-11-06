@@ -1,3 +1,3 @@
 # AimAcademy
 
-[Live Link](https://cjbreezey.github.io/AimAcademy/)
+[Live Site](https://cjbreezey.github.io/AimAcademy/)
