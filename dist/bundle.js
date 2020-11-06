@@ -6,7 +6,7 @@
 /*! runtime requirements:  */
 // modal start button
 const start_btn = document.getElementById('startBtn')
-
+// debugger
 document.addEventListener("DOMContentLoaded", () => {
 
     start_btn.addEventListener("click", () => {
