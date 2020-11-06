@@ -240,10 +240,10 @@ function canvas() {
             this.ctx.fillText('AIM ACADEMY', this.centerLeft, this.centerTop - 150);
 
             // social images
-            let img1 = document.getElementById("github");
-            let img2 = document.getElementById("linkedin")
-            this.ctx.drawImage(img1, this.centerLeft + 10, this.centerTop + 125, 60, 60)
-            this.ctx.drawImage(img2, this.centerLeft - 70, this.centerTop + 125, 60, 60)
+            // let img1 = document.getElementById("github");
+            // let img2 = document.getElementById("linkedin")
+            // this.ctx.drawImage(img1, this.centerLeft + 10, this.centerTop + 125, 60, 60)
+            // this.ctx.drawImage(img2, this.centerLeft - 70, this.centerTop + 125, 60, 60)
 
             // time mode
             this.ctx.fillStyle = "#fff";
