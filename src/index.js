@@ -464,6 +464,9 @@ function canvas() {
 
             } else {
 
+                gameCanvas.ctx.fillStyle = "white";
+                gameCanvas.ctx.textAlign = "center";
+                gameCanvas.ctx.textBaseline = "center";
                 gameCanvas.ctx.font = "30px Open Sans";
                 gameCanvas.ctx.fillText("Time : " + this.mode.timer, this.centerLeft, this.centerTop - 40);
                 gameCanvas.ctx.fillText("Score : " + this.mode.score, this.centerLeft, this.centerTop);
