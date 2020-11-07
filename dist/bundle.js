@@ -36,7 +36,6 @@ function canvas() {
     // Cursor
     this.cursorX = -50;
     this.cursorY = -50;
-    this.cursorSound = [];
 
     // Game Settings
     this.currentView = "menu";
@@ -52,14 +51,10 @@ function canvas() {
     })
     this.canvas.addEventListener('mousedown', function () {
 
-        // Shoot Sound
-        gameCanvas.cursorSound.push(new sound());
-        gameCanvas.cursorSound[gameCanvas.cursorSound.length - 1].play();
-
         // Menu Event
         if (gameCanvas.currentView === "menu") {
 
-            // Target Mode Icon
+            // Survival Mode Icon
             if (gameCanvas.cursorX > gameCanvas.centerLeft - 75
                 && gameCanvas.cursorX < gameCanvas.centerLeft + 75
                 && gameCanvas.cursorY > gameCanvas.centerTop - 50
@@ -159,11 +154,11 @@ function canvas() {
 
         }
 
-        setTimeout(function () {
+        // setTimeout(function () {
 
-            gameCanvas.cursorSound.splice(gameCanvas.cursorSound[gameCanvas.cursorSound.length - 1], 1);
+        //     gameCanvas.cursorSound.splice(gameCanvas.cursorSound[gameCanvas.cursorSound.length - 1], 1);
 
-        }, 2000);
+        // }, 2000);
 
     })
     document.addEventListener('keydown', function (e) {
@@ -203,7 +198,6 @@ function canvas() {
             if (this.mode.life <= 0) {
 
             }
-
             this.mode.addTarget();
 
         }
@@ -235,15 +229,16 @@ function canvas() {
     this.view = function (type) {
 
         this.clear();
-        // setInterval(this.time, 1000)
 
         if (type === "menu") {
 
-            this.ctx.fillStyle = "#000";
+            this.ctx.fillStyle = "red";
+            this.ctx.shadowBlur = 50;
+            this.ctx.shadowColor = "white"
             this.ctx.textAlign = "center";
             this.ctx.textBaseline = "center";
             this.ctx.font = "50px Open Sans";
-            this.ctx.fillText('AIM ACADEMY', this.centerLeft, this.centerTop - 150);
+            this.ctx.fillText('AIM ACADEMY', this.centerLeft, this.centerTop - 120);
 
             // social images
             // let img1 = document.getElementById("github");
@@ -252,6 +247,8 @@ function canvas() {
             // this.ctx.drawImage(img2, this.centerLeft - 70, this.centerTop + 125, 60, 60)
 
             // time mode
+            this.ctx.shadowBlur = 20;
+            this.ctx.shadowColor = "black";
             this.ctx.fillStyle = "#fff";
             this.ctx.fillRect(this.centerLeft - 250, this.centerTop - 50, 150, 150);
             // survival mode
@@ -304,7 +301,7 @@ function canvas() {
             gameCanvas.ctx.textAlign = "center";
             gameCanvas.ctx.textBaseline = "center";
             gameCanvas.ctx.font = "24px Open Sans";
-            gameCanvas.ctx.fillText("Survival Mode", this.centerLeft, this.centerTop + 40);
+            gameCanvas.ctx.fillText("Survival Mode", this.centerLeft, this.centerTop + 30);
 
             // infinity mode box
 
@@ -349,7 +346,7 @@ function canvas() {
             gameCanvas.ctx.textAlign = "center";
             gameCanvas.ctx.textBaseline = "center";
             gameCanvas.ctx.font = "26px Open Sans";
-            gameCanvas.ctx.fillText("Timed Mode", this.centerLeft - 175, this.centerTop + 40);
+            gameCanvas.ctx.fillText("Timed Mode", this.centerLeft - 175, this.centerTop + 30);
             
             // God Mode Box
 
@@ -394,7 +391,7 @@ function canvas() {
             gameCanvas.ctx.textAlign = "center";
             gameCanvas.ctx.textBaseline = "center";
             gameCanvas.ctx.font = "26px Open Sans";
-            gameCanvas.ctx.fillText("God Mode", this.centerLeft + 175, this.centerTop + 40);
+            gameCanvas.ctx.fillText("God Mode", this.centerLeft + 175, this.centerTop + 30);
 
 
         } else if (type === "survivalMode") {
@@ -496,11 +493,13 @@ function mouse() {
     let crosshair = document.querySelector('canvas')
     crosshair.onmouseover = function() {
         this.style.cursor = "crosshair"
+        // debugger
+        this.style.color = "green"
     }
 
 }
 
-// Game Mode
+// Timed Mode
 function timedMode() {
 
     this.score = 0;
@@ -673,19 +672,7 @@ function rand(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 
 }
-function sound() {
 
-    this.sound = document.createElement("audio");
-    this.sound.src = "shoot.mp3";
-    this.sound.setAttribute("preload", "auto");
-
-    this.play = function () {
-
-        this.sound.play();
-
-    }
-
-}
 function run() {
 
     gameCanvas.controller();

@@ -67,7 +67,7 @@ body {
 }
 
 .canvas {
-    background-image: url('../images/training_stage.jpg');
+    background-image: url('../images/training_arena.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
