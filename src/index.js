@@ -211,7 +211,6 @@ function canvas() {
             if (this.mode.timer <= 0) {
 
             }
-            // this.mode.time()
             this.mode.addTarget();
 
         }
