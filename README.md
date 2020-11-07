@@ -3,7 +3,7 @@
 [Live Site](https://cjbreezey.github.io/AimAcademy/)
 
 ## Aim Academy
-[![Image from Gyazo](https://i.gyazo.com/2b2e1dd13ee69c34325f7f902dbb94f1.gif)](https://gyazo.com/2b2e1dd13ee69c34325f7f902dbb94f1)
+[![Image from Gyazo](https://i.gyazo.com/3dece620a714a3309b59f3f5d5fba3cf.gif)](https://gyazo.com/3dece620a714a3309b59f3f5d5fba3cf)
 
 ## Background
 
@@ -23,19 +23,19 @@ This Game was built using only vanilla Javascript and HTML5 Canvas
 
 * You have a 1 minute timer and you want to score as many objects clicked in the given time
 
-[![Image from Gyazo](https://i.gyazo.com/224365748ad8f16ffccf72b1361c0165.gif)](https://gyazo.com/224365748ad8f16ffccf72b1361c0165)
+[![Image from Gyazo](https://i.gyazo.com/52ecdf52820ca21fac17cbe5b61d86a9.gif)](https://gyazo.com/52ecdf52820ca21fac17cbe5b61d86a9)
 
 ### Survival Mode
 
 * You have 3 lives and you want to survive as long as you can with those 3 lives
 
-[![Image from Gyazo](https://i.gyazo.com/ad4950b5d712d508d0bb618a456e31e2.gif)](https://gyazo.com/ad4950b5d712d508d0bb618a456e31e2)
+[![Image from Gyazo](https://i.gyazo.com/632d26abc11bc81be1214310ebd19fa0.gif)](https://gyazo.com/632d26abc11bc81be1214310ebd19fa0)
 
 ### God Mode
 
 * You have 3 lives and want to survive as long as you can, except this time its 10 times harder than regular survival mode
 
-[![Image from Gyazo](https://i.gyazo.com/73b324f045702e78783387a15109eb95.gif)](https://gyazo.com/73b324f045702e78783387a15109eb95)
+[![Image from Gyazo](https://i.gyazo.com/4c7635b2477d9818025187ce9e503e9b.gif)](https://gyazo.com/4c7635b2477d9818025187ce9e503e9b)
 
 
 
