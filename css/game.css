@@ -70,6 +70,8 @@ body {
     background-image: url('../images/training_arena.png');
     background-repeat: no-repeat;
     background-size: cover;
+    height: fit-content;
+    width: fit-content;
 }
 
 .image-links {
