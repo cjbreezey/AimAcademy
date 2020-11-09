@@ -1,6 +1,5 @@
 // modal start button
 const start_btn = document.getElementById('startBtn')
-// debugger
 document.addEventListener("DOMContentLoaded", () => {
 
     start_btn.addEventListener("click", () => {
@@ -486,7 +485,6 @@ function mouse() {
     let crosshair = document.querySelector('canvas')
     crosshair.onmouseover = function() {
         this.style.cursor = "crosshair"
-        // debugger
         this.style.color = "green"
     }
 
