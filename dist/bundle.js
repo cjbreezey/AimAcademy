@@ -502,7 +502,7 @@ function timedMode() {
     this.score = 0;
     this.shootFail = 0;
     this.targets = [];
-    this.timer = 6000 // Ms
+    this.timer = 3000 // Ms
     this.targetsMaxSize = 50; // Unity : Pixel
     this.targetsRapidity = 0.2; // Unity : Pixel
     this.targetsTime = 500 - (this.score * 5); // Unity : Mills
